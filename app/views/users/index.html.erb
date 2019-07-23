@@ -1,0 +1,7 @@
+<% if current_user %>
+  <% t "logged_in_as" %> <%= current_user.email %>.
+  <%= link_to t("log_out"), logout_path %>
+<% else %>
+  <%= link_to t("sign_up"), signup_path %> or 
+  <%= link_to t("log_in"), login_path %>
+<% end %>
