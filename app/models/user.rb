@@ -25,6 +25,7 @@ class User < ApplicationRecord
   validates :password, presence: true, length: {minimum: Settings.pass_min},
                     allow_nil: true
 
+  mount_uploader :avatar, AvatarImageUploader
   before_create :create_activation_token
 
   class << self
