@@ -4,7 +4,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 gem "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap", "~> 4.3.1"
-gem "carrierwave", "1.2.2"
+gem "carrierwave", "1.3.2"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "font-awesome-sass", "~> 5.9.0"
